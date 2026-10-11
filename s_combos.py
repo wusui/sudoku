@@ -113,7 +113,8 @@ def comb_update(board):
                         return nrow2([arow[0], list(enumerate(arow[1]))])
                     def njourn(text):
                         def explan():
-                            return f"In {drow()}, " \
+                            return f"NAKED PAIR, TRIPLE, OR QUAD\n" \
+                                   f"In {drow()}, " \
                                    f"{tfmt()} are squares that only contain " \
                                    f"{svals()}.\n" \
                                    f"Therefore other squares in {drow()} " \
@@ -123,7 +124,7 @@ def comb_update(board):
                                 def lr_v(datum):
                                     return f"Square {keyto_pt(datum[0])} " \
                                            f"cannot contain {datum[1]}"
-                                return '\n'.join(list(map(lr_v, rdata)))
+                                return '\n'.join(list(map(lr_v, rdata))) + '\n'
                             return lst_rem(list(chval['info'].items()))
                         return '\n'.join([text, explan(), dispindv(chval)])
                     return Board(orows=list(map(new_row,
