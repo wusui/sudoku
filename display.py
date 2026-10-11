@@ -9,7 +9,8 @@ def be_quiet():
     """
     Return False if you want to see boards
     """
-    return True
+    return False
+
 
 def skip_if(condition: bool):
     """

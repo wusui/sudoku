@@ -20,11 +20,12 @@ def nbox_update(board):
                                         update['points']))
                     #import pdb; pdb.set_trace()
                     #return f"{fptsi()}"
-                return ' '.join([f"Box {update['box'] + 1}",
+                return ' '.join([f"POINTED PAIR/TRIPLE\n",
+                                 f"Box {update['box'] + 1}",
                                  f"only contains {update['value']} in",
                                  f"{update['line']} {update['indx'] + 1}.",
                                  f"Therefore {fpoints()} cannot be",
-                                 f"{update['value']}"])
+                                 f"{update['value']}\n"])
             return journ + '\n'.join(list(map(mk_msg, updates)))
         def nbu_row(orow):
             def nbu_cell(cell):

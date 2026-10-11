@@ -51,7 +51,7 @@ def rep_update(packet):
     def repu_inner(bdata):
         def gen_board():
             return Board(orows=change_board(bdata),
-                         journal=write_journal({'header':
+                         journal='BASIC METHOD\n' + write_journal({'header':
                                 packet['wfunc'](bdata), 'xdata':
                                 bdata}), delay=1000)
         if not bdata['found']:

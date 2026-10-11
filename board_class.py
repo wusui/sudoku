@@ -1,7 +1,7 @@
 # Copyright (C) 2026 Warren Usui, MIT License
 """
 Define immutable Board and Cell objects
-Read data into a Board object
+Read string data into a Board object
 """
 from dataclasses import dataclass
 from itertools import chain
