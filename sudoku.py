@@ -14,6 +14,7 @@ from direct_sets import process_of_elimination, find_single_numb_in_grp
 from nbox_int import nbox_int
 from s_combos import two_combo, three_combo, four_combo
 from box_line_rem import box_line_rem
+from hidden import hidden
 from display import display
 
 @lru_cache(maxsize=1)
@@ -24,7 +25,7 @@ def op_list_func():
     """
     return dict(enumerate([process_of_elimination, find_single_numb_in_grp,
                            nbox_int, box_line_rem, two_combo, three_combo,
-                           four_combo]))
+                           four_combo, hidden]))
 
 def check_all(in_func):
     """

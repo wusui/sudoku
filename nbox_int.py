@@ -20,7 +20,7 @@ def nbox_update(board):
                                         update['points']))
                     #import pdb; pdb.set_trace()
                     #return f"{fptsi()}"
-                return ' '.join([f"POINTED PAIR/TRIPLE\n",
+                return ' '.join(["POINTED PAIR/TRIPLE\n",
                                  f"Box {update['box'] + 1}",
                                  f"only contains {update['value']} in",
                                  f"{update['line']} {update['indx'] + 1}.",
